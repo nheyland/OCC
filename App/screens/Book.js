@@ -41,11 +41,7 @@ const Book = () => {
                       ? hour.datetime.getHours() + ":00 AM"
                       : hour.datetime.getHours() - 12 + ":00 PM"}
                   </Text>
-                  <Text>
-                    {fakeData.forEach(
-                      (x) => Date.parse(x.start) < Date.parse(hour.datetime)
-                    )}
-                  </Text>
+                  <Text>!{fakeData.forEach((x) => console.log(x))}@</Text>
                 </View>
               );
           })}
